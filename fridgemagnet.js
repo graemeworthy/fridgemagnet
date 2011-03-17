@@ -10,11 +10,11 @@ Fridgemagnet = {
 		return !!localStorage[url];
 	},
 	fetch: function(url) {
-		var mycopy = nil;
+		var mycopy = null;
 		if (Fridgemagnet.supported() && Fridgemagnet.storage_check(url)) {
 			mycopy_data = localStorage[url];
 			mycopy = eval(mycopy_data);
-			setTimeout(Fridgemagnet.normal_fetch, 2000, url, false); // background update
+			setTimeout(Fridgemagnet.normal_fetch, 20000, url, false); // background update
 		} else {
 			mycopy = Fridgemagnet.normal_fetch(url, true); // blocking fetch 
 		}
