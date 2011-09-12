@@ -1,4 +1,4 @@
-Stash.js
+Fridgemagnet.js
 ============
 A practical implementation of the html5 localStorage key value store.
 
